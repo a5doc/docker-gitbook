@@ -1,0 +1,16 @@
+version: '2'
+
+services:
+  gitbook:
+    image: altus5/gitbook
+    build: ../
+    volumes:
+      - .:/gitbook
+      - gitbook_node_modules:/gitbook/node_modules
+      # - ../entrypoint.sh:/usr/local/bin/entrypoint.sh
+    ports:
+      - 4000:4000
+
+volumes:
+  gitbook_node_modules:
+    driver: local

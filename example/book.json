@@ -1,0 +1,12 @@
+{
+  "language": "ja",
+  "plugins": [
+    "uml",
+    "mathjax"
+  ],
+  "pluginsConfig": {
+  },
+  "pdf": {
+    "fontFamily": "sans"
+  }
+}
