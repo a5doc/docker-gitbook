@@ -64,7 +64,7 @@ book.jsonにプラグインを追加した場合は、`gitbook install`を再実
 ```
 docker-compose run --rm gitbook install
 ```
-もしも、npmでの追加インストールが必要なものある場合は、`entrypoint.sh`に必要な処理を加えて、dockerイメージを再buildするか、あるいは、volumesのところに以下のように追加して、コンテナ内のentrypoint.shを置き換えてください。
+もしも、npmでの追加インストールが必要なものがある場合は、`entrypoint.sh`に必要な処理を加えて、dockerイメージを再buildするか、あるいは、volumesのところに以下のように追加して、コンテナ内のentrypoint.shを置き換えてください。
 ```
     volumes:
       - entrypoint.sh:/usr/local/bin/entrypoint.sh

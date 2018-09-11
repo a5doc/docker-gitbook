@@ -23,7 +23,11 @@ COPY fonts-local.conf /etc/fonts/local.conf
 RUN apt-get install -y graphviz default-jre
 
 # gitbook
-RUN npm install -g gitbook-cli && gitbook fetch 3.2.3
+RUN npm install -g gitbook-cli \
+  && gitbook fetch 3.2.3
+
+# plantuml用svg
+RUN npm install -g svgexport --unsafe-perm
 
 COPY entrypoint.sh /usr/local/bin/
 RUN chmod +x /usr/local/bin/*.sh
