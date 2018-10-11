@@ -4,8 +4,6 @@ trap 'echo "エラーが発生しました。" 1>&2' ERR
 
 cmd=${1:-help}
 
-cd /gitbook
-
 export PATH=$(npm bin):$PATH
 
 _init() {
