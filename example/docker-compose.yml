@@ -2,7 +2,7 @@ version: '2'
 
 services:
   gitbook:
-    image: altus5/gitbook
+    image: a5doc/gitbook
     build: ../
     volumes:
       - .:/gitbook
