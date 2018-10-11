@@ -72,7 +72,7 @@ docker-compose run --rm gitbook install
 
 ## デバッグ
 
-いろいろ追加したり、削除したりを繰り返すうちに、行かなくなることがあるので、node_modulesをいったん、全削除してから、やり直したい場合は、_initで削除されます。
+いろいろ追加したり、削除したりを繰り返すうちに、うまく行かなくなることがあるので、node_modulesをいったん、全削除してから、やり直したい場合は、_initで削除されます。
 ```
 docker-compose run --rm gitbook _init
 ```
