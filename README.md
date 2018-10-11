@@ -13,7 +13,7 @@ version: '2'
 
 services:
   gitbook:
-    image: altus5/gitbook
+    image: a5doc/gitbook
     volumes:
       - .:/gitbook
       - gitbook_node_modules:/gitbook/node_modules
