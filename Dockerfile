@@ -7,7 +7,9 @@ ENV LANG ja_JP.UTF-8
 RUN echo "deb http://http.debian.net/debian jessie-backports main" >>/etc/apt/sources.list \
   && apt-get clean \
   && apt-get update \
-  && apt-get install -y locales-all
+  && apt-get install -y locales-all \
+  # for node-canvas (plugin-autocover)
+  && apt-get install -y libcairo2-dev libjpeg-dev libpango1.0-dev libgif-dev build-essential g++
 
 # Caribre
 RUN apt-get install -y libgl1-mesa-dev libxcomposite-dev
